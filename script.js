@@ -25,12 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
               //alert(splitArray[1]);
               document.getElementById("difficulty").innerHTML = splitArray[1];
               if(splitArray[1] == "Low"){
+                document.getElementById("reward").innerHTML = "15xp"
                 document.getElementById("header2").style.background = "linear-gradient(180deg, #8fce00 0%, rgba(217, 217, 217, 0) 100%)";
                 document.getElementById("header").style.background = "linear-gradient(180deg, #274e13 0%, #6aa84f 100%)";
+
               }else if(splitArray[1] == "Medium"){
+                document.getElementById("reward").innerHTML = "36xp"
                 document.getElementById("header2").style.background = "linear-gradient(180deg, #ffd966 0%, rgba(217, 217, 217, 0) 100%)";
                 document.getElementById("header").style.background = "linear-gradient(180deg, #ce7e00 0%, #bf9000 100%)";
               }else if(splitArray[1] == "High"){
+                document.getElementById("reward").innerHTML = "100xp"
                 document.getElementById("header2").style.background = "linear-gradient(180deg, #D74828 0%, rgba(217, 217, 217, 0) 100%);";
                 document.getElementById("header").style.background = "linear-gradient(180deg, #B30B0B 0%, #D74828 100%)";
               }
