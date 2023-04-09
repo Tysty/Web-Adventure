@@ -1,0 +1,17 @@
+{
+  "name": "Web Adventure",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "script.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  }
+
+}
